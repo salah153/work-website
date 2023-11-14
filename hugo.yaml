@@ -47,11 +47,11 @@ markup:
 
 params:
   author: Salah Atallah
-  authorimage: ../assets/images/global/author.webp
-  og_image: /images/tailbliss-cover.png
+  authorimage: ../assets/images/global/templogo.webp
+  og_image: /images/templogo.png
   moto: "we see through you with AI"
-  description: "this is me jst trying to test changing stuff in the HTML File"
-  disable_theme_toggle: false
+  description: "description"
+  disable_theme_toggle: true
   disable_stay_uptodate: false
 
   p1:
@@ -75,13 +75,23 @@ params:
         url: "#"
     logos:
       - identifier: a
-        image: "images/global/sample-logo.svg"
+        image: "images/global/templogo.svg"
         alt: "a"
       - identifier: b
+        image: "images/global/templogo.svg"
+        alt: "a"
       - identifier: c
+        image: "images/global/templogo.svg"
+        alt: "a"
       - identifier: d
+        image: "images/global/templogo.svg"
+        alt: "a"
       - identifier: e
+        image: "images/global/templogo.svg"
+        alt: "a"
       - identifier: f
+        image: "images/global/templogo.svg"
+        alt: "a"
   p4:
     heading: "From the blog"
     content:
@@ -90,10 +100,6 @@ params:
     heading: "Stay Up to Date"
     content:
       - text: "Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque."
-    action: "#"
-    label: "Email address"
-    placeholder: "Enter your email"
-    button: "Notify me"
 
   social_media:
     github:
@@ -106,6 +112,23 @@ params:
 
 menu:
   main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: research
+      name: Research
+      url: /research/
+      weight: 20
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 30
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 40
+  footer:
     - identifier: home
       name: Home
       url: /home/
@@ -122,28 +145,6 @@ menu:
       name: Contact
       url: /contact/
       weight: 40
-  footer:
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 10
-    - identifier: blog
-      name: Blog
-      url: /categories/blog/
-      weight: 20
-    - identifier: home
-      name: Home
-      url: /home/
-      weight: 10
-    - identifier: research
-      name: Research
-      url: /research/
-      weight: 20
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 40
-
 markup:
   goldmark:
     renderer:
